@@ -1,0 +1,25 @@
+div div{
+    background-color: maroon;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px;
+    gap: 10px;
+}
+
+.g1{
+    grid-column: 1 / 4;       /* spans from column line to 1 to 3 */
+    grid-row: 1 / 2;         /* spans from column line to 1 to 2 */
+}
+
+.g2{
+    grid-column: 2/ 3;       /* starts and ends at column line 3 */
+    grid-row: 2 / 3;      /* spans from column line to 2 to 4 */
+}
+
+.g3{
+    grid-column: 1 / 4;  /* spans all column  */
+    grid-row: 3 / 4;        /* starts and ends at row line 4 */
+}
